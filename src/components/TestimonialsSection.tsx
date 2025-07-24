@@ -71,7 +71,7 @@ const TestimonialsSection: React.FC = () => {
         </div>
 
         <div className="relative">
-          {/* Navigation Arrows */}
+          
           <button
             onClick={prevSlide}
             className="absolute top-1/2 left-4 z-10 -translate-y-1/2 transform rounded-full bg-white p-2 shadow-lg transition-all hover:bg-gray-50 hover:shadow-xl"
@@ -110,7 +110,7 @@ const TestimonialsSection: React.FC = () => {
             </svg>
           </button>
 
-          {/* Desktop: Show all three cards */}
+          
           <div className="hidden md:grid md:grid-cols-3 md:gap-6">
             {testimonials.map((testimonial) => (
               <div key={testimonial.id} className="group">
@@ -123,7 +123,7 @@ const TestimonialsSection: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
 
-                    {/* Profile Circle */}
+                  
                     <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 transform">
                       <div className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-500 ring-4 ring-white">
                         <svg
@@ -157,7 +157,7 @@ const TestimonialsSection: React.FC = () => {
             ))}
           </div>
 
-          {/* Mobile: Carousel */}
+        
           <div className="md:hidden">
             <div className="overflow-hidden">
               <div
@@ -215,7 +215,7 @@ const TestimonialsSection: React.FC = () => {
               </div>
             </div>
 
-            {/* Dots Indicator - Mobile only */}
+           
             <div className="mt-8 flex justify-center space-x-2">
               {testimonials.map((_, index) => (
                 <button

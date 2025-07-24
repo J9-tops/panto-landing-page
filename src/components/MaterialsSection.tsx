@@ -5,7 +5,6 @@ const MaterialsSection: React.FC = () => {
     <section className="mb-10 bg-white py-20">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
-          {/* Text Content */}
           <div className="space-y-6">
             <div className="text-xs font-bold tracking-wider text-orange-500 uppercase">
               MATERIALS
@@ -39,9 +38,7 @@ const MaterialsSection: React.FC = () => {
             </button>
           </div>
 
-          {/* Image Grid */}
           <div className="grid grid-cols-2 gap-4">
-            {/* Top Left */}
             <div className="space-y-4">
               <img
                 src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=300&h=200&fit=crop"
@@ -55,7 +52,6 @@ const MaterialsSection: React.FC = () => {
               />
             </div>
 
-            {/* Top Right */}
             <div className="pt-8">
               <img
                 src="https://images.unsplash.com/photo-1549497538-303791108f95?w=300&h=400&fit=crop"

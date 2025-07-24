@@ -5,7 +5,6 @@ const ExperiencesSection: React.FC = () => {
     <section className="mb-10 bg-white py-20">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
-          {/* Image */}
           <div className="order-2 lg:order-1">
             <img
               src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop"
@@ -14,7 +13,6 @@ const ExperiencesSection: React.FC = () => {
             />
           </div>
 
-          {/* Text Content */}
           <div className="order-1 space-y-6 lg:order-2">
             <div className="text-xs font-bold tracking-wider text-orange-500 uppercase">
               EXPERIENCES

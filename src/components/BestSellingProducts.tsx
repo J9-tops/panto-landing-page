@@ -1,45 +1,45 @@
 import { ChevronLeft, ChevronRight, Plus } from "lucide-react";
 import { useState } from "react";
 
+const categories = ["Chair", "Beds", "Sofa", "Lamp"];
+
+const products = [
+  {
+    id: 1,
+    name: "Sakarias Armchair",
+    category: "Chair",
+    price: 392,
+    rating: 5,
+    image: "/images/sakarias.png",
+  },
+  {
+    id: 2,
+    name: "Baltsar Chair",
+    category: "Chair",
+    price: 299,
+    rating: 5,
+    image: "/images/baltsar.png",
+  },
+  {
+    id: 3,
+    name: "Anjay Chair",
+    category: "Chair",
+    price: 519,
+    rating: 5,
+    image: "/images/anjay.png",
+  },
+  {
+    id: 4,
+    name: "Nyantuy Chair",
+    category: "Chair",
+    price: 921,
+    rating: 5,
+    image: "/images/nya.png",
+  },
+];
+
 const BestSellingProducts = () => {
   const [activeCategory, setActiveCategory] = useState("Chair");
-
-  const categories = ["Chair", "Beds", "Sofa", "Lamp"];
-
-  const products = [
-    {
-      id: 1,
-      name: "Sakarias Armchair",
-      category: "Chair",
-      price: 392,
-      rating: 5,
-      image: "/images/sakarias.png",
-    },
-    {
-      id: 2,
-      name: "Baltsar Chair",
-      category: "Chair",
-      price: 299,
-      rating: 5,
-      image: "/images/baltsar.png",
-    },
-    {
-      id: 3,
-      name: "Anjay Chair",
-      category: "Chair",
-      price: 519,
-      rating: 5,
-      image: "/images/anjay.png",
-    },
-    {
-      id: 4,
-      name: "Nyantuy Chair",
-      category: "Chair",
-      price: 921,
-      rating: 5,
-      image: "/images/nya.png",
-    },
-  ];
 
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }, (_, i) => (
@@ -77,9 +77,7 @@ const BestSellingProducts = () => {
           </div>
         </div>
 
-        {/* Products Grid */}
         <div className="relative mx-auto w-fit">
-          {/* Navigation Arrows */}
           <button className="absolute top-1/2 left-0 z-10 flex h-10 w-10 -translate-x-4 -translate-y-1/2 transform items-center justify-center rounded-full bg-white shadow-md transition-shadow hover:shadow-lg">
             <ChevronLeft className="h-5 w-5 text-gray-600" />
           </button>
@@ -88,7 +86,6 @@ const BestSellingProducts = () => {
             <ChevronRight className="h-5 w-5 text-gray-600" />
           </button>
 
-          {/* Products */}
           <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             {products.map((product) => (
               <div
@@ -102,7 +99,7 @@ const BestSellingProducts = () => {
                     className="h-full w-full scale-70"
                   />
                 </div>
-                {/* Product Info */}
+
                 <div className="bg-white p-4">
                   <p className="mb-1 text-sm text-gray-500">
                     {product.category}
@@ -111,12 +108,10 @@ const BestSellingProducts = () => {
                     {product.name}
                   </h3>
 
-                  {/* Rating */}
                   <div className="mb-3 flex items-center">
                     {renderStars(product.rating)}
                   </div>
 
-                  {/* Price and Add Button */}
                   <div className="flex items-center justify-between">
                     <span className="text-xl font-bold text-gray-900">
                       ${product.price}
@@ -131,7 +126,6 @@ const BestSellingProducts = () => {
           </div>
         </div>
 
-        {/* View All Button */}
         <div className="mt-12 text-center">
           <button className="inline-flex items-center font-medium text-orange-500 transition-colors hover:text-orange-600">
             View All

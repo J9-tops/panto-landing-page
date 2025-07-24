@@ -1,37 +1,37 @@
 import React, { useState } from "react";
 
+const testimonials = [
+  {
+    id: 1,
+    name: "Bang Upin",
+    image:
+      "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop",
+    review:
+      "Terimakasih banyak, kini ruangan rumah saya menjadi lebih mewah dan terlihat mahal",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name: "Ibuk Sukijan",
+    image:
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=300&fit=crop",
+    review:
+      "Sangat terpukau dengan kualitas produk yang diberikan dan dengan harga yang cukup terjangkau",
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: "Mpok Ina",
+    image:
+      "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=400&h=300&fit=crop",
+    review:
+      "Sangat memuaskan, dan kualitas yang diberikan sangat memuaskan kami",
+    rating: 5,
+  },
+];
+
 const TestimonialsSection: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
-  const testimonials = [
-    {
-      id: 1,
-      name: "Bang Upin",
-      image:
-        "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop",
-      review:
-        "Terimakasih banyak, kini ruangan rumah saya menjadi lebih mewah dan terlihat mahal",
-      rating: 5,
-    },
-    {
-      id: 2,
-      name: "Ibuk Sukijan",
-      image:
-        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=300&fit=crop",
-      review:
-        "Sangat terpukau dengan kualitas produk yang diberikan dan dengan harga yang cukup terjangkau",
-      rating: 5,
-    },
-    {
-      id: 3,
-      name: "Mpok Ina",
-      image:
-        "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=400&h=300&fit=crop",
-      review:
-        "Sangat memuaskan, dan kualitas yang diberikan sangat memuaskan kami",
-      rating: 5,
-    },
-  ];
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % testimonials.length);
@@ -71,7 +71,6 @@ const TestimonialsSection: React.FC = () => {
         </div>
 
         <div className="relative">
-          
           <button
             onClick={prevSlide}
             className="absolute top-1/2 left-4 z-10 -translate-y-1/2 transform rounded-full bg-white p-2 shadow-lg transition-all hover:bg-gray-50 hover:shadow-xl"
@@ -110,7 +109,6 @@ const TestimonialsSection: React.FC = () => {
             </svg>
           </button>
 
-          
           <div className="hidden md:grid md:grid-cols-3 md:gap-6">
             {testimonials.map((testimonial) => (
               <div key={testimonial.id} className="group">
@@ -123,7 +121,6 @@ const TestimonialsSection: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
 
-                  
                     <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 transform">
                       <div className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-500 ring-4 ring-white">
                         <svg
@@ -157,7 +154,6 @@ const TestimonialsSection: React.FC = () => {
             ))}
           </div>
 
-        
           <div className="md:hidden">
             <div className="overflow-hidden">
               <div
@@ -215,7 +211,6 @@ const TestimonialsSection: React.FC = () => {
               </div>
             </div>
 
-           
             <div className="mt-8 flex justify-center space-x-2">
               {testimonials.map((_, index) => (
                 <button

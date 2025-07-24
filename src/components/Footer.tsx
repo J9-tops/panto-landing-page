@@ -5,7 +5,6 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-100 py-16">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-gray-800">Panto</h3>
             <p className="text-sm leading-relaxed text-gray-600">
@@ -14,7 +13,6 @@ const Footer: React.FC = () => {
             </p>
           </div>
 
-          {/* Services */}
           <div className="space-y-4">
             <h4 className="text-sm font-bold tracking-wider text-orange-500 uppercase">
               Services
@@ -47,7 +45,6 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Furniture */}
           <div className="space-y-4">
             <h4 className="text-sm font-bold tracking-wider text-orange-500 uppercase">
               Furniture
@@ -80,7 +77,6 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Follow Us */}
           <div className="space-y-4">
             <h4 className="text-sm font-bold tracking-wider text-orange-500 uppercase">
               Follow Us
@@ -126,7 +122,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Bottom Section */}
         <div className="mt-12 border-t border-gray-200 pt-8">
           <div className="flex flex-col items-center justify-between text-sm text-gray-600 md:flex-row">
             <p>Copyright © {new Date().getFullYear()}</p>

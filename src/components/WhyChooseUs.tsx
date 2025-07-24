@@ -26,7 +26,6 @@ export default function WhyChooseUs() {
     <div className="font-ibm-plex mt-80 bg-transparent px-4 py-16">
       <div className="mx-auto max-w-6xl">
         <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-4">
-          {/* Title Section */}
           <div className="lg:col-span-1">
             <h2 className="text-3xl leading-tight font-bold text-gray-900">
               Why <br className="hidden lg:block" />
@@ -34,7 +33,6 @@ export default function WhyChooseUs() {
             </h2>
           </div>
 
-          {/* Features Grid */}
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3 lg:col-span-3">
             {features.map((feature) => (
               <div
